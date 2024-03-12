@@ -1,0 +1,151 @@
+/* Common styles */
+.but {
+  border: none;
+}
+
+.carousel-inner .carousel-item {
+  transition: transform 2s ease;
+}
+
+.home {
+  background-color: bisque;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 40%;
+  opacity: 1;
+  transition: 1s;
+}
+
+.carousel-caption.slide {
+  top: 0;
+  opacity: 1;
+}
+
+.caption-bottom {
+  position: relative;
+  bottom: 4vh;
+  opacity: 1;
+  transition: 1s;
+}
+
+.caption-bottom.slide {
+  bottom: -90vh;
+  opacity: 1;
+}
+
+
+
+.caption-bottom:hover {
+  bottom: 0; /* Move text to the bottom of the container on hover */
+}
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .carousel-item img.img-carousel {
+    height: 200px; /* Adjust the height for mobile devices */
+    width: auto; /* Maintain aspect ratio */
+  }
+
+  .container1 {
+    column-count: 1; /* Divide container into 2 columns */
+    column-gap: 20px; /* Add gap between columns */
+  }
+  
+  .item {
+    margin-bottom: 20px; /* Add space between items */
+    padding: 10px; /* Add padding to items */
+    background-color: #f0f0f0;
+  }
+
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+  .carousel-item img.img-carousel {
+    height: 500px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensure the image covers the entire container */
+  }
+
+
+  .carousel-caption .card-group .card:last-child .card-body {
+    text-align: left; /* Align text to the left */
+    margin-left: 10px; /* Add left margin to move the text to the left corner */
+  }
+
+  .container1 {
+    column-count: 3; /* Divide container into 3 columns */
+    column-gap: 20px; /* Add gap between columns */
+    margin: 10;
+    width: 100%;
+  }
+
+  .item {
+    margin-bottom: 20px; /* Add space between items */
+    padding: 10px; /* Add padding to items */
+    background-color: #f0f0f0;
+  }
+}
+.container2{
+  background-color: whitesmoke;
+  margin-top: 2%;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin: 5%;
+}
+.card-img-top{
+  height: 300px;
+}
+.card-title{
+  font-size: smaller;
+}
+.table{
+  table-layout: fixed;
+  width: 100%;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}

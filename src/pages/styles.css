@@ -1,0 +1,77 @@
+.background{
+  background-size: cover; /* Scale the background image to cover the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  position: fixed; /* Position the background image fixed to cover the entire viewport */
+  top: 0; /* Position the background image at the top of the viewport */
+  left: 0; /* Position the background image at the left of the viewport */
+  right: 0; /* Position the background image at the right of the viewport */
+  bottom: 0; /* Position the background image at the bottom of the viewport */
+  z-index: -1; /* Set a lower z-index to ensure the content appears above the background */
+}
+.container {
+  width: 90%; /* Default width for larger screens */
+  margin: 0 auto; /* Center the container horizontally for larger screens */
+  display: flex;
+  flex-direction: column; /* Ensure child elements stack vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  position: relative; /* Enable relative positioning for children */
+  background-color: rgba(255, 255, 255, 0.7); /* Set background color with opacity */
+  padding: 20px; /* Add padding to container */
+  border-radius: 15px;
+}
+.buttonStyle:hover {
+  background-color: #936842; /* Change background color on hover */
+}
+
+
+
+/* Media query for laptops and larger screens */
+@media screen and (min-width: 768px) {
+  .background{
+    background-image:url('./images/lbg.jpg');
+  }
+  .new{
+    padding-top: 15%;
+  }
+  .container {
+    width: 33%; /* Adjust width for laptops */
+  }
+  .Form{
+    width: 60%;
+  }
+  .buttonStyle{
+    padding: 10px;
+    background-color: #1375d6;
+    color: white;
+    border: none;
+    border-radius: 15px; /* Set the border-radius for full curvature */
+    cursor: pointer;
+  }
+  
+}
+
+/* Media query for phones and smaller screens */
+@media screen and (max-width: 767px) {
+  .new{
+    padding-top: 45%;
+  }
+  .background{
+    background-image: url('./images/mbg.jpg');
+  }
+  .container {
+    width: 90%; /* Adjust width for phones */
+    margin-left: auto; /* Center the container horizontally for smaller screens */
+    margin-right: auto; /* Center the container horizontally for smaller screens */
+    padding-top:10%;
+  }
+  .buttonStyle{
+    margin: 2px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 15px; /* Set the border-radius for full curvature */
+    cursor: pointer;
+  }
+}

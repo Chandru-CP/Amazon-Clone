@@ -1,0 +1,36 @@
+/* For desktop */
+@media (min-width: 768px) {
+  .card {
+    width: 250px; /* Set the width of all cards */
+    height: 90%; /* Set the height of all cards */
+  }
+
+  .card img {
+    width: 200px; /* Set the width of all images inside cards */
+    height: 200px; /* Set the height of all images inside cards */
+  }
+}
+
+/* For mobile */
+@media (max-width: 767px) {
+  .col-md-3{
+    width: 150px; /* Set the width of all cards */
+    height: 250px; /* Set the height of all cards */
+    overflow: auto
+
+  }
+  .card {
+    width: 150px; /* Set the width of all cards */
+    height: 250px; /* Set the height of all cards */
+    font-size: smaller;
+    text-align: justify;
+  }
+
+  .card img {
+    width: 100px; /* Set the width of all images inside cards */
+    height: 100px; /* Set the height of all images inside cards */
+  }
+  .card-text{
+    margin-bottom: 10;
+  }
+}
